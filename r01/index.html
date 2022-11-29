@@ -1,0 +1,1145 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="es" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>Jarritos</title>
+
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <!-- MOBILE FORMAT -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- DESCRIPTION & KEYWORDS -->
+    <meta name="description" content="...">
+    <meta name="keywords" content="..." />
+
+    <!-- Share -->
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="..." />
+    <meta property="og:description" content="..." />
+    <meta property="og:url" content="./images/share.jpg" />
+    <meta property="og:site_name" content="..." />
+    <meta property="og:image" content="./images/share.jpg" />
+    <meta property="og:image:type" content="images/jpg">
+    <meta property="og:image:secure_url" content="./images/share.jpg" />
+    <link rel="image_src" href="images/share.jpg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="210" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/plugin/slick.css">
+    <link rel="stylesheet" href="./css/plugin/animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/concurso.css">
+
+    <!--[if IE]>
+    <script type="text/javascript">
+            var e = ("abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video").split(',');
+            for (var i=0; i<e.length; i++) {
+                document.createElement(e[i]);
+            }
+    </script>
+    <style type="text/css">
+            .gradient {filter: none;}
+    </style>
+    <![endif]-->
+    
+
+
+</head>
+<body>
+    
+    <!-- 7/06/22 -->
+    <!-- Loader -->
+    <section class="loader">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+    </section>
+    <main id="main-block"><!-- Main -->
+        <!-- Modal Success -->
+        <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <img src="./images/icon/success.png" alt="Success" class="modal__icon">
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Gracias</h5>
+                  <p>Tu mensaje es importante,<br>pronto recibirás información de Jarritos.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn--type3 js-close" data-toggle="modal" data-target="#modalSuccess">Entendido</button>
+                </div>
+              </div>
+            </div>
+        </div><!-- / -->
+        <!-- Modal Error -->
+        <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <img src="./images/icon/error.png" alt="Error" class="modal__icon">
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Oops!</h5>
+                  <p>Ocurrió un error, intentálo más tarde.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn--type3 js-close" data-toggle="modal" data-target="#modalError">Entendido</button>
+                </div>
+              </div>
+            </div>
+        </div><!-- / -->
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="menu__wrapp col-md-5 col-12">
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#historia">Historia</a>
+                                </li>
+                                <li>
+                                    <a href="#sabores">Sabores</a>
+                                </li>
+                                <li>
+                                    <a href="#donde-encontrarnos">Dónde encontramos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <a href="/" class="logo mx-auto">
+                            <img src="./images/logo/jarritos.svg" alt="Jarritos">
+                        </a>
+                    </div>
+                    <div class="social__wrapp col-md-5 col-12">
+                        <div class="social-list">
+                            <ul>
+                                <li>
+                                    <a href="##"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="open js-open">
+                        <small></small>
+                        <small></small>
+                        <small></small>
+                    </a>
+                </div>
+            </div>
+        </header><!-- / -->
+        <!-- 1. Hero section -->
+        <section id="hero-section" class="module module__hero ">
+            <div class="container">
+                <div class="row">
+                    <div class="hero__article col-md-7 offset-md-1 col-12">
+                        <img src="./images/element/leafs%402x.png" alt="Leafs" class="image-leaf1 animated heartBeat slow sceneOne--LeafTwo">
+                        <article class="hero__txt mb-4">
+                            <p>Cumplimiento de código de red, energía limpias, redes y micro
+                                redes eléctricas, sustentabilidad, combustibles, movilidad eléctrica,
+                                eficiencia energética, generación, cogeneración, almacenamiento
+                                de energía y aprovechamiento de recursos renovables.
+                             </p>
+                            <!-- <p>Ofrecemos soluciones integrales enfocadas a la pequeña y
+                                mediana industria.</p>
+                            <p>Acceso a tecnología de punta y desarrollo de proyectos. </p> -->
+                        </article>
+                        <img src="./images/bottle/botellas.png" alt="Presentaciones Jarritos" class="image-bottle1 sceneOne--BottleOne">
+                    </div>
+                    <!-- <div class="video-wrapper module--scene-video sceneTwo--video">
+                        <img src="./assets/images/icon/scroll.svg" class="video__scroll">
+                        <video id="js-video" loop muted autoplay>
+                            <source src="./assets/video/jarritos-video.mp4" type="video/mp4">
+                            <source src="./assets/video/jarritos-video.gg" type="video/ogg">
+                            <source src="./assets/video/jarritos-video.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                       </video>
+                       <img src="./assets/video/jarritos-video.gif" alt="Jarritos" class="video--gif">
+                    </div> -->
+                </div>
+            </div>
+            <img src="./images/element/leaf_blur%402x.png" alt="Leafs" class="image-leaf2 sceneOne--LeafOne">
+            <p class="vertical-text vertical-text--position-left sceneOne--TextOne">La vida se</p>
+            <p class="vertical-text vertical-text--position-right sceneOne--TextTwo">Disfruta en gajos</p>
+        </section><!-- / -->
+        <!-- 2 Video -->
+        <section id="video" class=""></section><!-- / -->
+        <!-- 3. Historia -->
+        
+        <section id="historia" class="module module--pt200 module--pb200 module--relative">
+            <div class="link-on" id="historia"></div>
+            <div class="container">
+                <div class="row pb-60 sceneThreeEnterOne">
+                    <div class="historia__txt col-md-7 offset-md-2 col-12">
+                        <h1 class="mb-60">Nuestra historia</h1>
+                        <article class="col-12 col-reset">
+                            <small class="small-color">1950 | Inicio</small>
+                            <p>La historia de Jarritos comienza en 1950, cuando Don Francisco "El güero" Hill, un químico y revolucionario de ideas, se encontraba en el comedor de su casa en Guadalajara, Jalisco, experimentando con frutas frescas y agua carbonatada. Su ingenio lo llevó a crear una mezcla carbonatada con café; pero impulsado por nuevos sabores, descubrió una fresca y deliciosa  bebida de tamarindo, y así fue como nació el primer Jarritos. ¡Un éxito total! </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row pb-60 sceneThreeEnterTwo">
+                    <div class="col-md-5 offset-md-5 col-9 offset-2">
+                        <img src="./images/photo/don_francisco%402x.png" alt="Don Francisco 'El güero' Hill">
+                    </div>
+                </div>
+                <div class="row pb-150 sceneThreeEnterThree">
+                    <div class="col-md-4 offset-md-2 col-8">
+                        <img src="./images/bottle/bottle_cola%402x.jpg" alt="Jarritos">
+                    </div>
+                    <div class="col-md-4 pt-100">
+                        <p>Esta creación, necesitaba un nombre tan mexicano como sus sabores, e inspirado en el acto tradicional de beber aguas frescas en jarros de arcilla, lo nombró Jarritos.</p>
+                    </div>
+                </div>
+                <div class="row sceneThreeEnterFour">
+                    <div class="historia__txt col-lg-4 offset-lg-5 col-md-6 offset-md-3 col-12">
+                        <article class="col-12 col-reset">
+                            <small class="small-color small--top1">1960 | Popularidad</small>
+                            <p>Tan solo 10 años después, en 1960, Jarritos ya se vendía en gran parte del territorio mexicano siendo el refresco más popular, y cómo no, si su variedad de sabores naturales lo hacen único.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row sceneThreeEnterFive">
+                    <div class="historia__txt col-lg-4 offset-lg-5 col-md-6 offset-md-3 col-12">
+                        <article class="col-12 col-reset">
+                            <small class="small-color small--top1">1988 | Internacional</small>
+                            <p>En 1989, dio un salto hacia a lo internacional y cruzó la frontera norte a territorio estadounidense, donde llegó a conquistar miles corazones de la comunidad latina y no tan latina.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row sceneThreeEnterSix">
+                    <div class="historia__txt col-lg-4 offset-lg-5 col-md-6 offset-md-3 col-12">
+                        <article class="col-12 col-reset">
+                            <p>El resto es historia, hoy Jarritos es exportado a casi todo el mundo y es reconocido como un emblema de nuestro México. </p>
+                            <p>Este 2020, Jarritos cumple 70 años contigo... </p>
+                            <p><strong>¡70 años siendo el Sabor de Todos!</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <p class="vertical-text vertical-text--color2 vertical-textThree--position-right sceneThree--TextThree">Somos México</p>
+            </div>
+            <p class="horizontal-text horizontal-text--color2 horizontal-text--position-left sceneThree--TextFour">Somos Tradición</p>
+            <p class="vertical-text vertical-text--color1 vertical-textTwo--position-left sceneThree--TextOne">Mandarina para los</p>
+            <p class="vertical-text vertical-text--color1 vertical-textTwo--position-right sceneThree--TextTwo">Amantes de la adrenalina</p>
+        </section><!-- / -->
+          <!-- 4. Quote -->
+          <section id="quote" class="module module--size1">
+            <img src="./images/typo/el_sabor.svg" alt="El Sabor" class="quote__left sceneFour--TextOne">
+            <img src="./images/typo/de_todos.svg" alt="De todo" class="quote__right sceneFour--TextTwo">
+        </section><!-- / -->
+        <!-- 5. Mandarina -->
+        <section class="module module--pt200 module--pb200 module--relative module__slider-info module--wipeLeft">
+            <div class="link-on" id="sabores"></div>
+            <div class="container">
+               
+                <div class="slider-info col-lg-7 col-12">
+                    <div class="slider__block">
+                        <div class="js-slider-info slider-info__init"  data-sabor="">
+                            <!-- Slide 1-->
+                            <div class="slide__sabor-1" data-sabor="1">
+                                <h3 class="slider-info__title">Mandarina</h3>
+                                <article>
+                                    <p>Con mandarinas naturales extraídas directamente de nuestro rancho secreto en Yucatán, este Jarritos se ha vuelto el favorito de chicos y grandes. Su mezcla de sabores dulces y cítricos lo hace ideal para cuando hace muchísimo calor, pero por supuesto, ¡podemos disfrutarlo en todo momento!
+                                    </p>
+                                    <p>Mientras encuentras a tu media naranja, ve tomando mandarinas directo de la botella de Jarritos.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="slide__sabor-2" data-sabor="2">
+                                <h3 class="slider-info__title">Piña</h3>
+                                <article>
+                                    <p>Con piñas cultivadas en Tabasco, este sabor tiene el reflejo de una tarde de verano, pero es ideal para cualquier momento. Cierra los ojos, dale un trago y déjate llevar por lo más dulce de la piña combinada con azúcar de caña.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="slide__sabor-3" data-sabor="3">
+                                <h3 class="slider-info__title">Tamarindo</h3>
+                                <article>
+                                    <p>Como el primer amor, éste es el sabor que todos amamos. Jarritos fue la primera bebida carbonatada sabor tamarindo de la historia y, gracias a él, nacieron los demás sabores que hoy podemos disfrutar (Por supuesto, siempre usando tamarindos frescos, naturales y 100% oaxaqueños). 
+                                    </p>
+                                    <p>Recuerda que si vas a regalar algo lindo, que sea un Jarritos de Tamarindo. 
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="slide__sabor-4" data-sabor="4">
+                                <h3 class="slider-info__title">Tuti Frutti</h3>
+                                <article>
+                                    <p>Para qué quedarse con una, si puedes tener todas. La unión de frutas hacen la fuerza y el Jarritos Tutti frutti te traerá de cabeza. Sí, todas sus frutas también son mexicanas, frescas y naturales. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        <img src="./images/element/details1.svg" class="slider__detail-top">
+                        <img src="./images/element/details2.svg" class="slider__detail-bottom">
+                    </div>
+                    <div class="slider__bottle sceneFive--bottleOne js-slider--show">
+                        <img src="./images/bottle/bottle_tangerina%402x.png" alt="Jarritos de Mandarina" class="sabor-item-1 active">
+                        <img src="./images/bottle/bottle_pina%402x.png" alt="Jarritos de Mandarina" class="sabor-item-2">
+                        <img src="./images/bottle/bottle_tamarindo%402x.png" alt="Jarritos de Mandarina" class="sabor-item-3">
+                        <img src="./images/bottle/bottle_tutifrutti%402x.png" alt="Jarritos de Mandarina" class="sabor-item-4">
+                    </div>
+                </div>
+                <a href="#contacto" class="btn btn--type1 js-scroll-to">
+                    <span>Saltar</span>
+                    <img src="./images/icon/arrow_down.svg" alt="Saltar">
+                </a>
+            </div>
+            <p class="vertical-text vertical-text--color3 vertical-textFive--position-center sceneFive--TextThree js-slider--show">
+                <span class="sabor-item-1 active">Mandarina</span>
+                <span class="sabor-item-2">Piña</span>
+                <span class="sabor-item-3">Tamarindo</span>
+                <span class="sabor-item-4">Tuti Frutti</span>
+            </p>
+            <p class="vertical-text vertical-textFour--position-left sceneFive--TextOne">Dime cuántas</p>
+            <p class="vertical-text vertical-textFour--position-right sceneFive--TextTwo">Frutas tienes tú</p>
+        </section><!-- / -->
+        <!-- 6. Mapa Jalisco -->
+       
+        <section class="module module--pt200 module--pb200  module--relative module--wipeRight module--map">
+            <div class="link-on" id="donde-encontrarnos"></div>
+            <div class="container">
+                <div class="map__title col-12 map-animation-title">
+                    <h2 class="title-symbol2"><span>Dónde</span> encontrarnos</h2>
+                </div>
+                <div class="slider-map col-lg-7 offset-lg-5 col-12">
+                    <div class="js-map-controller slider-map__controller">
+                        <a href="#" data-div="1" class="slider__action js-slider__action active">
+                            <p>Noroeste</p>
+                        </a>
+                        <a href="#" data-div="2" class="slider__action js-slider__action">
+                            <p>Noreste</p>
+                        </a>
+                        <a href="#" data-div="3" class="slider__action js-slider__action">
+                            <p>Centro País</p>
+                        </a>
+                        <a href="#" data-div="4" class="slider__action js-slider__action">
+                            <p>Centro Occidente</p>
+                        </a>
+                        <a href="#" data-div="5" class="slider__action js-slider__action">
+                            <p>Sur Sureste</p>
+                        </a>
+                    </div>
+                    <section class="slider__map-wrapp">
+                        <!-- 1. Noroeste -->
+                        <div class="slider__map-block active" id="slider-map-1">
+                            <img src="./images/element/details3.svg" class="slider__detail-left">
+                            <div class="js-slider-map-locationOne slider-map__init">
+                                <!-- Slide 1 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Baja California</h3>
+                                        <p>Entre largos y tranquilos viajes en carretera, playas ideales para los deportes extremos, dunas y viñedos, no puede faltar Jarritos para acompañar desde tacos de pescado hasta una rica langosta.
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Bajacaliforniano</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Baja California Sur</h3>
+                                        <p>Tú, un Jarritos bien frío, un marlín recién ahumado y la vista al Mar de Cortés, no sé, piénsalo. Todos sus rincones son un verdadero paraíso terrenal orgullosamente mexicano.
+                                        </p>
+                                        <p>También tienes que probar los diferentes estilos de platillos con almeja, únicos de este estado.
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Sudcaliforniano</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Sinaloa</h3>
+                                        <p>No hay culichi, mazatleco o guasavense que se resistan a un Aguachile y un Jarritos. Si lo visitas no sabrás qué es más mágico si sus playas o sus fantásticos pueblos.</p>
+                                        <p> No pierdas la oportunidad de visitar este pintoresco estado. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Sinaloense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Sonora</h3>
+                                        <p>Cuando de combinaciones perfectas hablamos, aquí encontrarás mar, desierto y montañas juntos.
+                                        </p>
+                                        <p>Y para el paladar, el Chiltepín, las chimichangas y la machaca se llevan riquísimo con el Jarritos de tu preferencia.
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Sonorense</strong></p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- 2. Noreste -->
+                         <div class="slider__map-block" id="slider-map-2">
+                            <img src="./images/element/details3.svg" class="slider__detail-left">
+                            <div class="js-slider-map-locationTwo slider-map__init">
+                                <!-- Slide 1 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Chihuahua</h3>
+                                        <p>Pocas oportunidades como maravillarte con los paisajes que regalan las Barrancas del Cobre y de tomar Jarritos al mismo tiempo.</p>
+                                        <p>Además de poder disfrutar los paisajes de la Sierra Madre Occidental, podrás saborear tu Jarritos con una discada y montados. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Chihuahuense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Coahuila</h3>
+                                        <p>Al igual que Cuatrociénegas, Jarritos es como un oasis en medio del desierto. Refréscate con un Jarritos bien frío y disfruta de sus paisajes.</p>
+                                        <p>Si ya te dio hambre, busca sus típicos menudos rojos, cabrito a la leña o la barbacoa de cabeza. ¡No te vas a arrepentir!</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Coahuilense</strong></p>
+                                    </article>
+                                </div>
+                                 <!-- Slide 3 -->
+                                 <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Durango</h3>
+                                        <p>De apreciar la belleza colonial de La Perla de Guadiana nunca te cansarás; del sabor de Jarritos tampoco.</p>
+                                        <p>Otro Patrimonio de la Humanidad 100% mexicano rodeado de desiertos, ríos, cascadas y sierras verdes. Un verdadero deleite para el ojo. </p>
+                                        <p>Cuando llegue la hora de comer, ordena tu Jarritos favorito y un caldillo duranguense.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Duranguense</strong></p>
+                                    </article>
+                                </div>
+                                 <!-- Slide 4 -->
+                                 <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Nuevo León</h3>
+                                        <p>El cabrito, el machacado y la carne asada no se podrían llevar mejor con un Jarritos helado.</p>
+                                        <p>En este caluroso estado podrás explorar las Grutas de García y los recorridos de Santa Lucía, además de sorprenderte con una de las ciudades más grandes de México, Monterrey.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Neoleonés (a)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 5 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>San Luis Potosí</h3>
+                                        <p>Si quieres ver algo fuera de este planeta, existe Xilitla, si queremos probar algo igual de excepcional, existe Jarritos.</p>
+                                        <p>Un estado ideal para los que buscan aventuras y diversión. La Huasteca Potosina tiene de todo y para todos. </p>
+                                        <p>Si eres de buen diente prueba el Zachauil, el Fiambre Potosino y las enchiladas potosinas, por supuesto, acompañados de un buen Jarritos.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Potosino (na)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 6 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Tamaulipas</h3>
+                                        <p>Esta parte del noreste es conocida por la vista espectacular del Golfo de México, un escenario perfecto para disfrutar tu Jarritos.</p>
+                                        <p>Si los pescados y mariscos son lo tuyo, debes probar el huatape de camarones y las distintas preparaciones de jaiba.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Zacatecano (na)</strong></p>
+                                    </article>
+                                </div>
+                                 <!-- Slide 7 -->
+                                 <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Zacatecas</h3>
+                                        <p>Desde lo profundo de sus minas hay leyendas; y una de ellas es que si te vas sin haber probado Jarritos y las Enchiladas Zacatecanas, un espíritu chocarrero vendrá por ti en la madrugada.</p>
+                                        <p>También es un Patrimonio de la Humanidad por su arquitectura, sus colores y sabores.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Zacatecano (na)</strong></p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- 3. Centro -->
+                         <div class="slider__map-block" id="slider-map-3">
+                            <img src="./images/element/details3.svg" class="slider__detail-left">
+                            <div class="js-slider-map-locationThree slider-map__init">
+                                <!-- Slide 1 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Morelos</h3>
+                                        <p>Que sería de una visita a Morelos si no pudieramos probar la Cecina de Taplixca junto a un Jarritos y disfrutar del Estado de la Eterna Primavera.</p>
+                                        <p>Si lo que quieres es un fin de semana para disfrutar con familia y amigos, Morelos es una de las mejores opciones. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Morelense, guayabo (aba)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Puebla</h3>
+                                        <p>Para acompañar una riquísima Tlayuda, Jarritos; para el Chile en Nogada, también. La mezcla ideal entre modernidad, tradición, cultura y naturaleza la encontrarás en Puebla.</p>
+                                        <p>Encuentra tu Jarritos ideal y date una vuelta sin igual. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Poblano (na)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Tlaxcala</h3>
+                                        <p>Tal vez será el estado más pequeño de México, pero guarda grandes sabores y tradiciones, como Jarritos.</p>
+                                        <p>Podrás viajar en globo aerostático para ver sus majestuosos como el Pico de Orizaba. Si no pruebas los mixiotes o los escamoles a la mantequilla con un Jarritos, es como si no lo hubieras visitado.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Tlaxcalteco (ca)</strong></p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4. Occidente -->
+                        <div class="slider__map-block" id="slider-map-4">
+                            <img src="./images/element/details3.svg" class="slider__detail-left">
+                            <div class="js-slider-map-locationFour slider-map__init">
+                                <!-- Slide 1 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Nayarit</h3>
+                                        <p>Si quieres encontrar un paraíso abrazado por el inmenso océano y la verde Sierra Madre, Nayarit te va a encantar. Surfea en Sayulita, bucea en la “alberca más grande del mundo”, visita la feria del elote a Jala y come un pescado sarandeado. Eso sí, siempre con un Jarritos en mano.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Nayarita, nayaritense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Aguascalientes</h3>
+                                        <p>Aquí Jarritos no solo se disfruta durante La Feria de San Marcos, sino todo el año. Un estado donde podrás disfrutar desde birria y lechón, hasta jicaletas, chascafruta y, por supuesto, el dulce de guayaba.</p>
+                                        <p>Pero además de su comida, podrás disfrutar el famoso ferrocarril, los relojes y mucho, mucho más.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Hidrocálido, aguascalentense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Guanajuato</h3>
+                                        <p>Podrá faltar la persona especial para ir al Callejón del Beso, pero Jarritos, ¡nunca! Colores y leyendas recorren los pasillos de este estado, que también es Patrimonio de la Humanidad.</p>
+                                        <p>Te recomendamos probar las enchiladas mineras, la penca rellena y un caldo de oso para el postre, siempre bien acompañados de tu Jarritos.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Guanajuatense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Colima</h3>
+                                        <p>¿Que tal te vendría ver el atardecer en Manzanillo con tu Jarritos favorito?</p>
+                                        <p>Ahora súmale unos sopitos, moyos y un caldo michi.</p>
+                                        <p>Si eres como nosotros, seguro se te hizo agua la boca.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Colimense, colimeño (ña) </strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 5 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Jalisco</h3>
+                                        <p>¡La tierra que nos vio nacer! Hogar de comida riquísima y patrimonio de México como las tortas ahogadas, la carne en su jugo, la birria y hasta los frijoles charros. Hasta se te antojó, ¿no?
+                                        </p>
+                                        <p>Además, tiene todo tipo de paisajes y climas; desde grandes ciudades, hasta playas y bosques.
+                                        </p>
+                                        <p>Si no conoces, ¡vete a dar una vuelta y quedarás maravillado! (No olvides llevar contigo un Jarritos, es el acompañante perfecto)</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Jalisciense, jalisquillo (sin ofender)</strong></p>
+                                    </article>
+                                </div>
+                                 <!-- Slide 6 -->
+                                 <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Michoacán</h3>
+                                        <p>El equilibrio se encuentra cuando Jarritos se junta con unos buenos taquitos de Carnitas.</p>
+                                        <p>En este también Patrimonio de la Humanidad podrás disfrutar increíbles pueblos mágicos coloniales y poder revivir su historia. No por nada, Michoacán es el lugar que las mariposas monarca eligieron como hogar.
+                                        </p>
+                                        <p>¡Destapa un Jarritos y empieza el recorrido!
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Michoacano (na)</strong></p>
+                                    </article>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- 5. Sur -->
+                        <div class="slider__map-block" id="slider-map-5">
+                            <img src="./images/element/details3.svg" class="slider__detail-left">
+                            <div class="js-slider-map-locationFive slider-map__init">
+                                <!-- Slide 1 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Campeche</h3>
+                                        <p>Calakmul, Ezdná, y Balamkú son tan únicos como tú… y el sabor de Jarritos.</p>
+                                        <p>No es poca cosa que su capital sea Patrimonio de la Humanidad. </p>
+                                        <p>Si un día quieres escapar de las multitudes, date una escapada por sus reservas naturales y tranquilas playas.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Campechano (na)</strong></p>
+                                    </article>
+                                </div>
+                               <!-- Slide 2 -->
+                               <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Chiapas</h3>
+                                        <p>Ese flechazo de amor al ver el Cañón del Sumidero y su enigmática selva por primera vez, también se siente cuando pruebas tu Jarritos favorito.</p>
+                                        <p>Entre tachilhuiles, chalupas, shotes con momo y más platillos podrás acompañar tus Jarritos.
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Chiapaneco (ca)
+                                        </strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Guerrero</h3>
+                                        <p>Si buscas sol, arena y playa, Guerrero es una gran opción. Entre Acapulco y Zihuatanejo, no sabrás cuál es mejor.</p>
+                                        <p>Para acompañar ese famosísimo Pozole rojo qué mejor que los famosísimos y deliciosos Jarritos.
+                                        </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Guerrerense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Oaxaca</h3>
+                                        <p>Jarritos es a lo que llamamos “el ajonjolí de todo los moles”, por eso se lleva bien con los 7 tipos que hay en Oaxaca.</p>
+                                        <p>Playas paradisíacas, lagunas fluorescentes, zonas arqueológicas, y mucho más, podrás encontrar en este estado. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Oaxaqueño (ña)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 5 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Quintana Roo</h3>
+                                        <p>Mar turquesa, arena blanca, lagunas de siete colores y Jarritos. ¡A esto le podemos decir paraíso!</p>
+                                        <p>Amado y visitado por personas de todos los rincones del mundo. Una vez que visitas sus playas, no te querrás ir jamás.</p>
+                                        <p>Y cuando pruebes el Pescado a la Pikin-Xic, el ceviche de caracol y el Makum combinado con tu Jarritos, mucho menos.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Quintanarroense</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 6 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Yucatán</h3>
+                                        <p>Dicen que las coincidencias no existen, por eso, sabemos que la tradicional Cochinita Pibil se junta con Jarritos porque están hechos uno para el otro.</p>
+                                        <p>Además, Yucatán es hogar de las mandarinas que le dan sabor a nuestros Jarritos. No podría ser más perfecto. </p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Yucateco (ca)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 7 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Tabasco</h3>
+                                        <p>Lugar que guarda riquezas de la cultura Olmeca, de extensos plantíos de cacao y de deliciosos sabores como el de Jarritos.</p>
+                                        <p>El pejelagarto, los ostiones ahumados y sus exóticos sabores te van a fascinar.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong> Tabasqueño (ña)</strong></p>
+                                    </article>
+                                </div>
+                                <!-- Slide 8 -->
+                                <div>
+                                    <div class="weather-info clearfix mb-4">
+                                        <img src="./images/icon/temperatura.svg" alt="Temperatura" class="weather__icon">
+                                        <p class="weather__max">17°C</p>
+                                        <p class="weather__min">Min. 10°C</p>
+                                    </div>
+                                    <article class="map__info mb-3">
+                                        <h3>Veracruz</h3>
+                                        <p>Por toda la costa, en todas sus regiones alrededor del Golfo, hasta en el Pico de Orizaba, no puede faltar Jarritos.</p>
+                                        <p>Si te estás preguntando con qué combinar tu Jarritos, debes probar el pescado a la veracruzana, el arroz a la tumbada y el chilpachole de jaiba.</p>
+                                    </article>
+                                    <article class="map__footer">
+                                        <p>Gentilicio: <strong>Veracruzano (na) </strong></p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                   
+                    <div id="motion-scene" class="slider-map__scene ">
+                        <div class="layer slider-scene__cloud1" data-depth="0.8">
+                            <img src="./images/element/cloud1.png">
+                        </div>
+                        <div class="layer slider-scene__cloud2" data-depth="0.2">
+                            <img src="./images/element/cloud1.png" >
+                        </div>
+                        <div class="layer slider-scene__cloud3" data-depth="0.5">
+                            <img src="./images/element/cloud2.png">
+                        </div>
+                        <div class="layer slider-scene__cloud4" data-depth="0.2">
+                            <img src="./images/element/cloud3.png">
+                        </div>
+                        <div class="layer slider-scene__cloud5" data-depth="0.3">
+                            <img src="./images/element/cloud4.png">
+                        </div>
+                        <div class="layer slide-scene__map" data-depth="0.9" >
+                            <img src="./images/element/map.png" alt="Mapa de la República Mexicana">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-text horizontal-text--color3 horizontal-text--position-top sceneSix--TextOne">
+                <!-- Location 1 -->
+                <div class="map-location active" id="slider-location-1">
+                    <div class="js-slider-nav-locationNameOne map-location__txt">
+                        <div>
+                            <p>Baja California</p>
+                        </div>
+                        <div>
+                            <p>Baja California Sur</p>
+                        </div>
+                        <div>
+                            <p>Sinaloa</p>
+                        </div>
+                        <div>
+                            <p>Sonora</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 2 -->
+                <div class="map-location" id="slider-location-2">
+                    <div class="js-slider-nav-locationNameTwo map-location__txt">
+                        <div>
+                            <p>Chihuahua</p>
+                        </div>
+                        <div>
+                            <p>Coahuila</p>
+                        </div>
+                        <div>
+                            <p>Durango</p>
+                        </div>
+                        <div>
+                            <p>Nuevo León</p>
+                        </div>
+                        <div>
+                            <p>San Luis Potosí</p>
+                        </div>
+                        <div>
+                            <p>Tamaulipas</p>
+                        </div>
+                        <div>
+                            <p>Zacatecas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 3 -->
+                <div class="map-location" id="slider-location-3">
+                    <div class="js-slider-nav-locationNameThree map-location__txt">
+                        <div>
+                            <p>Morelos</p>
+                        </div>
+                        <div>
+                            <p>Puebla</p>
+                        </div>
+                        <div>
+                            <p>Tlaxcala</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 4 -->
+                <div class="map-location" id="slider-location-4">
+                    <div class="js-slider-nav-locationNameFour map-location__txt">
+                        <div>
+                            <p>Nayarit</p>
+                        </div>
+                        <div>
+                            <p>Aguascalientes</p>
+                        </div>
+                        <div>
+                            <p>Guanajuato</p>
+                        </div>
+                        <div>
+                            <p>Colima</p>
+                        </div>
+                        <div>
+                            <p>Jalisco</p>
+                        </div>
+                        <div>
+                            <p>Michoacán</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location 5 -->
+                <div class="map-location" id="slider-location-5">
+                    <div class="js-slider-nav-locationNameFive map-location__txt">
+                        <div>
+                            <p>Campeche</p>
+                        </div>
+                        <div>
+                            <p>Chiapas</p>
+                        </div>
+                        <div>
+                            <p>Guerrero</p>
+                        </div>
+                        <div>
+                            <p>Oaxaca</p>
+                        </div>
+                        <div>
+                            <p>Quintana Roo</p>
+                        </div>
+                        <div>
+                            <p>Yucatán</p>
+                        </div>
+                        <div>
+                            <p>Tabasco</p>
+                        </div>
+                        <div>
+                            <p>Veracruz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="contacto" class="module module--color1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-8 col-12 mx-auto form-module ">
+                        <h4 class="text-center">¿Comentarios?</h4>
+                        <form method="post" action="" class="form-block" >
+                        <input type="hidden" name="csrfmiddlewaretoken" value="Z1ct3ddPYuZfHLQwdEnXR9778yQFtHiiGUvMBqVdzpBLCtyB2jTrDg0WbVcPFRbF">
+                            <div class="col-12 form__span">
+                                <div class="form-group form__field">
+                                    <input type="text" name="name_sender" placeholder="Nombre" class="form-control js-form-field" required id="id_name_sender">
+                                    
+                                    <label for="nameField">Nombre *</label>
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    <p>Este campo es requerido</p>
+                                </div>
+                            </div>
+                            <div class="col-12 form__span">
+                                <div class="form-group form__field">
+                                 <input type="text" name="email_sender" placeholder="E-mail" class="form-control js-form-field" required id="id_email_sender">
+                                    
+                                    <label for="emailField">Correo electrónico *</label>
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    <p>Este campo es requerido</p>
+                                </div>
+                            </div>
+                            <div class="col-12 form__span">
+                                <div class="form-group form__field">
+                                <textarea name="message" cols="40" rows="10" placeholder="Tu mensaje" class="form-control js-form-field" required id="id_message">
+</textarea>
+                                    
+                                    <label for="messageField">Mensaje *</label>
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    <p>Este campo es requerido</p>
+                                </div>
+                            </div>
+                            <div class="col-12 form__span">
+                                <script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript">
+    // Submit function to be called, after reCAPTCHA was successful.
+    var onSubmit_36290ab4fd214d75bc236315092d092f = function(token) {
+        console.log("reCAPTCHA validated for 'data-widget-uuid=\"36290ab4fd214d75bc236315092d092f\"'")
+    };
+</script>
+
+<div class="g-recaptcha"
+     data-sitekey="6LdwfPIiAAAAAO6pEEQfka5K4LRH7GdbBoHCLCy0" required id="id_captcha" data-widget-uuid="36290ab4fd214d75bc236315092d092f" data-callback="onSubmit_36290ab4fd214d75bc236315092d092f" data-size="normal"
+>
+</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn--type2">Enviar</button>
+                            </div>
+                        </form>
+                        <div class="footer__social">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 text-center footer__copy">
+                            <p>Todos los derechos reservados jarritos © 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <div class="lb__concurso">
+            <div class="cont__btn">
+                <a href="/concurso/">
+                    Concurso <br>
+                    #mifotoJarritos
+                </a>
+            </div>
+            <div class="cont__lb">
+                <div class="bg__lb"></div>
+                <div class="info__lb">
+                    <div class="lb__center">
+                        <div class="center__cont">
+                            <div class="box__info">
+                                <div class="close__lb"></div>
+                                <div class="info__cons">
+                                    <div class="fil__lb">
+                                        <div class="logo__con">
+                                            <figure><img src="./images/concurso/logo-concurso.svg" alt=""></figure>
+                                        </div>
+                                        <div class="c__compo">
+                                            <div class="compo">
+                                                <div class="botellas">
+                                                    <figure class="bote b01"><img src="./images/concurso/b01.png" alt=""></figure>
+                                                    <figure class="bote b02"><img src="./images/concurso/b02.png" alt=""></figure>
+                                                    <figure class="bote b03"><img src="./images/concurso/b03.png" alt=""></figure>
+                                                    <figure class="bote b04"><img src="./images/concurso/b04.png" alt=""></figure>
+                                                </div>
+                                                <div class="c__frut">
+                                                    <figure class="frut fru01"><img src="./images/concurso/fru07.png" alt=""></figure>
+                                                    <figure class="frut fru02"><img src="./images/concurso/fru02.png" alt=""></figure>
+                                                    <figure class="frut fru03"><img src="./images/concurso/fru03.png" alt=""></figure>
+                                                    <figure class="frut fru04"><img src="./images/concurso/fru04.png" alt=""></figure>
+                                                    <figure class="frut fru05"><img src="./images/concurso/fru05.png" alt=""></figure> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c__cta">
+                                        <a href="/concurso/" class="cta">Participa</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- / -->
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/plugins/slick.min.js"></script>
+    <script type="text/javascript" src="./js/plugins/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./js/plugins/scrollMagic.min.js"></script>
+    <script type="text/javascript" src="./js/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="./js/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="./js/plugins/parallax.js"></script>
+    <script>
+        var assetsUrl = "https://d25hv6wz2p4kxn.cloudfront.net/static/";
+    </script>
+    <script type="text/javascript" src="./js/frontend.js"></script>
+    <script>
+        // Video autoplay
+        //document.getElementById('js-video').play();
+
+        // Scene
+        var scene = document.getElementById('motion-scene');
+        var parallax = new Parallax(scene);
+
+        $(".close__lb").on("click",function(){
+            $('.cont__lb').fadeOut();
+        });
+    </script>
+</body>
+
+</html>
